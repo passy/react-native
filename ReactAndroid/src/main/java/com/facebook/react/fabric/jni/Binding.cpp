@@ -8,7 +8,7 @@
 #include "ReactNativeConfigHolder.h"
 #include "StateWrapperImpl.h"
 
-#include <fb/fbjni.h>
+#include <fbjni/fbjni.h>
 #include <jsi/JSIDynamic.h>
 #include <jsi/jsi.h>
 #include <react/components/scrollview/ScrollViewProps.h>

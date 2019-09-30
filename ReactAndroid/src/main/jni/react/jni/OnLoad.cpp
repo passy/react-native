@@ -7,7 +7,7 @@
 
 #include <glog/logging.h>
 
-#include <fb/fbjni.h>
+#include <fbjni/fbjni.h>
 #include <fb/glog_init.h>
 #include <fb/log.h>
 

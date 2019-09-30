@@ -3,7 +3,7 @@
 // LICENSE file in the root directory of this source tree.
 
 #include "EventBeatManager.h"
-#include <fb/fbjni.h>
+#include <fbjni/fbjni.h>
 using namespace facebook::jni;
 
 namespace facebook {

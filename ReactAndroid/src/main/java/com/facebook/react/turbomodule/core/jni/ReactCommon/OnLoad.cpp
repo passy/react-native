@@ -1,6 +1,6 @@
 // Copyright 2004-present Facebook. All Rights Reserved.
 
-#include <fb/fbjni.h>
+#include <fbjni/fbjni.h>
 #include <fb/xplat_init.h>
 
 #include "TurboModuleManager.h"
