@@ -21,11 +21,11 @@ LOCAL_CFLAGS += -fexceptions -frtti -std=c++14 -Wall
 
 LOCAL_STATIC_LIBRARIES :=
 
-LOCAL_SHARED_LIBRARIES := libfbjni libreact_codegen_rncore libreactnativeutilsjni libreact_render_componentregistry libreact_render_uimanager libyoga libfolly_futures glog libfolly_json libglog_init libreact_render_core libreact_render_debug libreact_render_graphics librrc_view libreact_debug
+LOCAL_SHARED_LIBRARIES := fbjni libreact_codegen_rncore libreactnativeutilsjni libreact_render_componentregistry libreact_render_uimanager libyoga libfolly_futures glog libfolly_json libglog_init libreact_render_core libreact_render_debug libreact_render_graphics librrc_view libreact_debug
 
 include $(BUILD_SHARED_LIBRARY)
 
-$(call import-module,fbjni)
+$(call import-module,prefab/fbjni)
 $(call import-module,folly)
 $(call import-module,fbgloginit)
 $(call import-module,glog)

@@ -27,7 +27,7 @@ LOCAL_CFLAGS += -fexceptions -frtti -std=c++14 -Wall
 include $(BUILD_SHARED_LIBRARY)
 
 $(call import-module,glog)
-$(call import-module,fbjni)
+$(call import-module,prefab/fbjni)
 $(call import-module,fb)
 $(call import-module,folly)
 $(call import-module,react/renderer/componentregistry)

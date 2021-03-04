@@ -157,4 +157,11 @@ LOCAL_EXPORT_C_INCLUDES := \
 include $(PREBUILT_SHARED_LIBRARY)
 
 # fbjni
-include $(FIRST_PARTY_NDK_DIR)/fbjni/Android.mk
+# include $(FIRST_PARTY_NDK_DIR)/fbjni/Android.mk
+
+# Can be removed once we require at least NDK 21
+ifneq ($(call ndk-major-at-least,21),true)
+    $(call import-add-path,$(NDK_GRADLE_INJECTED_IMPORT_PATH))
+endif
+
+$(call import-module,prefab/fbjni)

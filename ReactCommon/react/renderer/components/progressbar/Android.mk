@@ -25,7 +25,7 @@ LOCAL_SHARED_LIBRARIES := libfbjni libreact_codegen_rncore libreactnativeutilsjn
 
 include $(BUILD_SHARED_LIBRARY)
 
-$(call import-module,fbjni)
+$(call import-module,prefab/fbjni)
 $(call import-module,folly)
 $(call import-module,fbgloginit)
 $(call import-module,glog)
